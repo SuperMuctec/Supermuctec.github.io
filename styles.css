@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6;
+}
+header {
+    background: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;
+}
+nav ul {
+    list-style-type: none; display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff; text-decoration: none; transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #007BFF;
+}
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center;
+}
+.cta-button {
+    background: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; transition: background 0.3s;
+}
+.cta-button:hover {
+    background: #0056b3;
+}
+section {
+    padding: 50px; text-align: center;
+}
+.service-card {
+    background: #f4f4f4; padding: 20px; margin: 15px; border-radius: 10px; display: inline-block; transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+form {
+    max-width: 400px; margin: 0 auto;
+}
+form input, form textarea {
+    width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+}
+button {
+    background: #007BFF; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+#form-message {
+margin-top: 15px; color: green;
+}
+footer {
+    background: #333; color: white; text-align: center; padding: 10px 0;
+}
