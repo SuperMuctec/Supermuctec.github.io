@@ -16,9 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none";
         }
     };
-
-    // Redirect button functionality
-    document.getElementById("discordBtn").onclick = function () {
-        window.location.href = "https://discord.gg";
-    };
 });
