@@ -4,6 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     background: linear-gradient(to bottom, #000, #555);
+    text-align: center; /* Center align all text */
 }
 
 header {
@@ -14,6 +15,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    text-align: center;
 }
 
 .logo {
@@ -24,6 +26,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     margin-left: 735px; /* Move all buttons to the left */
+    justify-content: center; /* Center-align buttons */
 }
 
 nav ul li {
@@ -64,14 +67,15 @@ nav ul li a:hover {
     background: transparent; /* Transparent background */
     color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
-    margin-top: 75px; /* Move the button lower */
-    text-decoration: none; /* Remove underline */
+    margin-top: 75px;
+    text-decoration: none;
+    text-align: center; /* Center-align the button text */
 }
 
 .cta-button:hover {
     background: #fff; /* Change to white on hover */
     color: #000;
-    border: 2px solid #bababa; /* Change text color to black on hover */
+    border: 2px solid #bababa;/* Change text color to black on hover */
     transform: scale(1.1); /* Slightly expand on hover */
 }
 
@@ -84,17 +88,19 @@ nav ul li a:hover {
     border: 2px solid #fff; /* White border */
     border-radius: 15px; /* Rounded corners */
     background: rgba(0, 0, 0, 0.5); /* Optional: background for enclosure */
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .service-card {
     background: rgba(0, 0, 0, 0.8); /* Dark background */
     color: #fff; /* White text */
     padding: 20px;
-    margin: 0 9.6605px; /* Half of 19.321px for equal spacing on both sides */
+    margin: 0 19.321px 40px; /* Adjust spacing around each card */
     border-radius: 10px; /* Rounded corners for individual service cards */
-    flex: 1; /* Make cards flexible to take equal space */
+    width: 250px; /* Set a fixed width */
     transition: background 0.3s, color 0.3s, border 0.3s; /* Transition for hover effects */
     border: 2px solid transparent; /* Transparent border to start with */
+    text-align: center; /* Center-align the text */
 }
 
 .service-card:hover {
