@@ -5,13 +5,13 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: url('img.jpg') no-repeat center center/cover; /* Add your background image */
+    background: url('img.jpg') no-repeat center center/cover;
     color: #fff;
 }
 
@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 1);
 }
 
 .logo-container {
@@ -41,17 +41,34 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 30px; /* Increased spacing */
+    position: relative; /* For dropdown positioning */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    padding: 10px 15px; /* Add padding for clickable area */
 }
 
 nav ul li a:hover {
-    color: #00bcd4;
+    background: rgba(255, 255, 255, 0.2); /* Background on hover */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.contact-dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to the parent */
+    background: rgba(0, 0, 0, 0.9); /* Background for dropdown */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    margin-top: 10px; /* Space from the button */
+    z-index: 1; /* Ensure dropdown is on top */
+}
+
+.contact:hover .contact-dropdown {
+    display: block; /* Show dropdown on hover */
 }
 
 .hero {
@@ -61,7 +78,7 @@ nav ul li a:hover {
     align-items: center;
     height: 80vh;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .cta-button {
@@ -70,19 +87,18 @@ nav ul li a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
     background: #0097a7;
+    transform: scale(1.1); /* Slightly enlarge button on hover */
 }
 
 section {
     padding: 50px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
     margin: 20px 0;
-    border-radius: 10px;
 }
 
 .service-card {
@@ -102,7 +118,7 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 1);
     position: relative;
     bottom: 0;
     width: 100%;
