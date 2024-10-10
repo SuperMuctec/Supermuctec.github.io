@@ -8,65 +8,40 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Invisible area to trigger the header to slide down -->
-    <div class="hover-top"></div>
-
-    <!-- Header divided into two parts -->
+    <!-- Header section -->
     <header>
         <div class="header-left">
             <img src="circular-pic.jpg" alt="Logo" class="logo-img">
-            <div class="logo-text">Supermutec</div>
+            <div class="logo-text glow-text">Supermutec</div>
         </div>
         <div class="header-right">
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="glow-text">About</a></li>
+                    <li><a href="#services" class="glow-text">Services</a></li>
+                    <li><a href="#contact" class="glow-text">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main content with background image -->
+    <!-- Main content with glowing animated text -->
     <section class="hero">
-        <h1>Welcome to Supermutec</h1>
-        <p>Your ultimate tech solution provider.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+        <h1 class="glow-text">Welcome to Supermutec</h1>
+        <p class="glow-text">Your ultimate tech solution provider.</p>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We specialize in modern tech solutions that elevate your business.</p>
+    <!-- Contact Info Section with glowing and animated text -->
+    <section id="contact" class="contact-info">
+        <h2 class="glow-text">Contact Us</h2>
+        <p class="glow-text">Discord: supermutec</p>
+        <p class="glow-text">Email: supermutec@gmail.com</p>
+        <a href="https://discord.com" target="_blank" class="glow-button">Join My Discord Server</a>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-card">Service 1</div>
-        <div class="service-card">Service 2</div>
-        <div class="service-card">Service 3</div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <div id="form-message"></div>
-    </section>
-
-    <!-- Invisible area to trigger the footer to slide up -->
-    <div class="hover-bottom"></div>
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Supermutec. All rights reserved.</p>
+        <p class="glow-text">&copy; 2024 Supermutec. All rights reserved.</p>
     </footer>
 </body>
 </html>
