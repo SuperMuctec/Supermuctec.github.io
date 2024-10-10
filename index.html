@@ -1,47 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermutec</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <!-- Header section -->
-    <header>
-        <div class="header-left">
-            <img src="circular-pic.jpg" alt="Logo" class="logo-img">
-            <div class="logo-text glow-text">Supermutec</div>
-        </div>
-        <div class="header-right">
-            <nav>
-                <ul>
-                    <li><a href="#about" class="glow-text">About</a></li>
-                    <li><a href="#services" class="glow-text">Services</a></li>
-                    <li><a href="#contact" class="glow-text">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('img.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    <!-- Main content with glowing animated text -->
-    <section class="hero">
-        <h1 class="glow-text">Welcome to Supermutec</h1>
-        <p class="glow-text">Your ultimate tech solution provider.</p>
-    </section>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    transition: opacity 0.3s ease;
+}
 
-    <!-- Contact Info Section with glowing and animated text -->
-    <section id="contact" class="contact-info">
-        <h2 class="glow-text">Contact Us</h2>
-        <p class="glow-text">Discord: supermutec</p>
-        <p class="glow-text">Email: supermutec@gmail.com</p>
-        <a href="https://discord.com" target="_blank" class="glow-button">Join My Discord Server</a>
-    </section>
+.header-left, .header-right {
+    flex: 1;
+}
 
-    <!-- Footer -->
-    <footer>
-        <p class="glow-text">&copy; 2024 Supermutec. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+
+.glow-text {
+    font-size: 2rem; /* Smaller font size */
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #0ff, 0 0 40px #f0f, 0 0 50px #ff0, 0 0 60px #f00;
+    animation: colorChange 5s infinite linear;
+    transition: opacity 0.3s ease;
+}
+
+.red-glow {
+    text-shadow: 0 0 10px red, 0 0 20px red; /* Red glow only for contact page */
+}
+
+.glow-button {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00f;
+    transition: background 0.3s;
+}
+
+.glow-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: yellow; }
+    100% { color: red; }
+}
