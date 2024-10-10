@@ -65,7 +65,7 @@ nav ul li a:hover {
     background: transparent; /* Transparent background */
     color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
-    margin-top: 50px;
+    margin-top: 75px;
     text-decoration: none;/* Move the button lower */
 }
 
