@@ -59,7 +59,7 @@ nav ul li a {
 nav ul li a:hover {
     background: #fff;
     color: #000;
-    transform: scale(1.2); /* Expand button more on hover */
+    transform: scale(1.9); /* Expand button more on hover */
     font-size: 18px; /* Expand font size on hover */
 }
 
