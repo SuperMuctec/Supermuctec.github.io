@@ -3,9 +3,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        const headerOffset = 100; // Adjust based on your header height
         const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+        const offsetPosition = elementPosition + window.scrollY;
 
         window.scrollTo({
             top: offsetPosition,
@@ -14,3 +13,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        link.style.transform = "scale(1.05)"; // Enlarge button when clicked
+        setTimeout(() => {
+            link.style.transform = ""; // Reset size after a short delay
+        }, 300); // Delay matches the transition time
+    });
+});
