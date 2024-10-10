@@ -12,12 +12,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', () => {
-        link.style.transform = "scale(1.05)"; // Enlarge button when clicked
-        setTimeout(() => {
-            link.style.transform = ""; // Reset size after a short delay
-        }, 300); // Delay matches the transition time
-    });
-});
