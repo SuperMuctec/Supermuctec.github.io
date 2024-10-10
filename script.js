@@ -1,19 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const contactBtn = document.getElementById("contactBtn");
-    const modal = document.getElementById("contactModal");
-    const closeModal = document.getElementById("closeModal");
+document.addEventListener('DOMContentLoaded', function() {
+    const services = document.querySelectorAll('.service-card');
 
-    contactBtn.onclick = function () {
-        modal.style.display = "block";
-    };
-
-    closeModal.onclick = function () {
-        modal.style.display = "none";
-    };
-
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    };
+    services.forEach(service => {
+        service.addEventListener('click', function() {
+            alert(`You clicked on ${service.querySelector('h3').innerText}`);
+        });
+    });
 });
