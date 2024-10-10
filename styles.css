@@ -4,54 +4,41 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Disable scrolling */
+    background: url('img.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
 }
 
-section {
-    padding: 50px;
-    text-align: center;
-    height: calc(100vh - 50px); /* Each section fills the page height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: -100px; /* Hide the header initially off-screen */
-    width: 100%;
-    transition: top 0.5s ease; /* Smooth slide-in effect */
-    z-index: 1000; /* Ensure the header stays above other elements */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    transition: opacity 0.3s ease;
 }
 
-/* Trigger the header to slide down when hovering near the top 5% of the page */
-body:hover header {
-    top: 0; /* Slide the header down */
+.header-left, .header-right {
+    flex: 1;
 }
 
-/* Navbar styles */
-nav ul {
-    list-style-type: none;
+.header-left {
     display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -59,97 +46,64 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #007BFF;
-}
-
-/* Hero Section */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 100vh; /* Take full height of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    height: 70vh;
     text-align: center;
 }
 
-.cta-button {
-    background: #007BFF;
+.glow-text {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #0ff, 0 0 40px #f0f, 0 0 50px #ff0, 0 0 60px #f00;
+    animation: colorChange 5s infinite linear;
+    transition: opacity 0.3s ease;
+}
+
+.glow-button {
+    font-size: 1.5rem;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00f;
     transition: background 0.3s;
 }
 
-.cta-button:hover {
-    background: #0056b3;
+.glow-button:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
-/* About Section */
-#about h2 {
-    font-size: 2.5rem;
-}
-
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-}
-
-/* Services Section */
-#services h2 {
-    font-size: 2.5rem;
-}
-
-.service-card {
-    background: #f4f4f4;
+.contact-info {
+    text-align: center;
     padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    display: inline-block;
-    transition: transform 0.3s;
 }
 
-.service-card:hover {
-    transform: scale(1.05);
-}
-
-/* Contact Form */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0056b3;
-}
-
-#form-message {
-    margin-top: 15px;
-    color: green;
+/* Animations */
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: yellow; }
+    100% { color: red; }
 }
