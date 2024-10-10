@@ -23,7 +23,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: -25px; /* Move all buttons to the left */
+    margin-left: 735px; /* Move all buttons to the left */
 }
 
 nav ul li {
@@ -34,6 +34,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
+    border: 2px solid #fff;
     border-radius: 10px;
     transition: background 0.8s, transform 0.8s;
 }
@@ -56,16 +57,20 @@ nav ul li a:hover {
 }
 
 .cta-button {
-    background: #007BFF;
-    color: white;
+    display: inline-block;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    border-radius: 10px;
+    border: 2px solid #fff; /* White border */
+    background: transparent; /* Transparent background */
+    color: #000; /* Text color */
+    transition: background 0.8s, transform 0.8s;
+    margin-top: 20px; /* Move the button lower */
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background: #fff; /* Change to white on hover */
+    color: #000; /* Change text color to black on hover */
+    transform: scale(1.05); /* Slightly expand on hover */
 }
 
 section {
