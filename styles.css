@@ -49,15 +49,16 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s, background 0.3s, transform 0.3s; /* Add transition for background and transform */
+    transition: background 0.3s, transform 0.3s; /* Add transition for background and transform */
     padding: 10px 15px;
+    border-radius: 10px; /* Keep border radius consistent */
+    display: inline-block; /* Make sure buttons respect padding */
 }
 
 nav ul li a:hover {
     background: #fff; /* Change background to white on hover */
     color: #000; /* Change text color on hover */
-    border-radius: 10px;
-    transform: scale(1.1); /* Expand button on hover */
+    transform: scale(1.2); /* Expand button more on hover */
 }
 
 .contact-dropdown {
@@ -95,7 +96,7 @@ nav ul li a:hover {
 
 .cta-button:hover {
     background: #0097a7;
-    transform: scale(1.1);
+    transform: scale(1.2); /* Increase the scale on hover */
 }
 
 section {
