@@ -17,16 +17,25 @@ header {
 }
 
 .logo {
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Circular image */
+    margin-right: 10px; /* Space between image and text */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: auto; /* Align buttons to the right */
+    margin-left: auto; /* Align buttons to the left */
 }
 
 nav ul li {
+    position: relative; /* Position relative to enable absolute positioning for the dropdown */
     margin: 0 10px;
 }
 
@@ -45,6 +54,22 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+.dropdown-content {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Position it below the Contact button */
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    min-width: 160px; /* Minimum width of the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1; /* Ensure dropdown appears above other content */
+    padding: 10px; /* Padding inside the dropdown */
+}
+
+nav ul li:hover .dropdown-content {
+    display: block; /* Show the dropdown on hover */
+}
+
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     height: 80vh;
@@ -58,55 +83,62 @@ nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 10px 20px; /* Adjusted padding */
     border-radius: 10px;
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
+    border: 2px solid #fff; /* White border */
+    background: transparent; /* Transparent background */
+    color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
     margin-top: 50px;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
 }
 
 .cta-button:hover {
-    background: #fff;
+    background: #fff; /* Change to white on hover */
     color: #000;
-    border: 2px solid #bababa;
-    transform: scale(1.1);
+    border: 2px solid #bababa; /* Change text color to black on hover */
+    transform: scale(1.1); /* Slightly expand on hover */
 }
 
 .services {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-enclosure {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    flex: 1 1 200px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.9); /* White background */
+    color: #000; /* Black text */
+    padding: 15px;
+    margin: 0 10px; /* Space between cards */
+    border-radius: 10px; /* Rounded corners */
+    flex: 1;
+    transition: background 0.3s, color 0.3s, border 0.3s; /* Transition for hover effects */
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    background: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color to black on hover */
+    border: 2px solid #bababa; /* Change border to #bababa on hover */
 }
 
-.about-container {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 600px; /* Center the about us section */
+.about {
     text-align: center;
+    padding: 20px;
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.9); /* Background for about section */
+    color: #000; /* Black text */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for about section */
 }
 
 footer {
