@@ -38,41 +38,43 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 30px; /* Space between navigation items */
-    position: relative; /* For dropdown positioning */
+    margin: 0 30px;
+    position: relative;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: background 0.3s, transform 0.3s; /* Add transition for background and transform */
+    transition: background 0.3s, transform 0.3s;
     padding: 10px 15px;
-    border-radius: 10px; /* Keep border radius consistent */
-    display: inline-block; /* Make sure buttons respect padding */
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px; /* Set initial font size */
 }
 
 nav ul li a:hover {
-    background: #fff; /* Change background to white on hover */
-    color: #000; /* Change text color on hover */
+    background: #fff;
+    color: #000;
     transform: scale(1.2); /* Expand button more on hover */
+    font-size: 18px; /* Expand font size on hover */
 }
 
 .contact-dropdown {
-    display: none; /* Hide dropdown by default */
-    position: absolute; /* Position it relative to the parent */
+    display: none;
+    position: absolute;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    z-index: 1; /* Ensure dropdown is on top */
+    z-index: 1;
 }
 
 .contact:hover .contact-dropdown {
-    display: block; /* Show dropdown on hover */
+    display: block;
 }
 
 .hero {
@@ -96,7 +98,7 @@ nav ul li a:hover {
 
 .cta-button:hover {
     background: #0097a7;
-    transform: scale(1.2); /* Increase the scale on hover */
+    transform: scale(1.2);
 }
 
 section {
