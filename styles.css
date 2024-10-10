@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 90px; /* Increased spacing */
+    margin: 0 250px; /* Increased spacing */
     position: relative; /* For dropdown positioning */
 }
 
