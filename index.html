@@ -4,73 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermuctec</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">Supermuctec</div>
+        <div class="logo">
+            <h1>Supermuctec</h1>
+            <img src="your-image.jpg" alt="Logo" class="logo-img"> <!-- Replace with your actual image -->
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact" id="contact-btn">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" id="contactButton">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Welcome to Supermuctec</h1>
-        <p>Your one-stop solution for tech services.</p>
-        <a href="https://discord.com" class="cta-button" target="_blank">Get In Touch</a>
+        <h2>Welcome to Supermuctec</h2>
+        <a href="#" class="cta-button">Get In Touch</a>
     </section>
 
-    <section id="about">
-        <h2><font color="#fff">About Us</font></h2>
-        <p><font color="#fff">We provide top-notch tech solutions for your needs.</font></p>
-    </section>
-
-    <section id="services">
-        <h2><font color="#fff">Our Services</font></h2>
-        <div class="service-enclosure">
-            <div class="service-card">
-                <h3>Service 1</h3>
-                <p>Description of Service 1.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service 2</h3>
-                <p>Description of Service 2.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service 3</h3>
-                <p>Description of Service 3.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service 4</h3>
-                <p>Description of Service 4.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service 5</h3>
-                <p>Description of Service 5.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service 6</h3>
-                <p>Description of Service 6.</p>
-            </div>
-        </div>
+    <section class="service-enclosure">
+        <div class="service-card">Service 1</div>
+        <div class="service-card">Service 2</div>
+        <div class="service-card">Service 3</div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Supermuctec. All rights reserved.</p>
+        <p>&copy; 2024 Supermuctec. All Rights Reserved.</p>
     </footer>
 
-    <div id="modal" class="modal">
+    <div class="modal" id="contactModal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <center><h2>Contact Us</h2></center>
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Discord: <a href="https://discord.gg" target="_blank">supermutec</a></p>
             <p>Email: supermutec@gmail.com</p>
+            <button id="discordButton">Join Discord</button>
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Link to the JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
