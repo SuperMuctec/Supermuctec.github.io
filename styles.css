@@ -23,12 +23,15 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: -765px; /* Align buttons to the right */
+    justify-content: flex-end; /* Align buttons to the right */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 nav ul li {
-    margin: 0 10px; /* Reduced margin between buttons */
+    margin: 0 10px; /* Margin between buttons */
 }
+
 
 nav ul li a {
     color: #fff;
