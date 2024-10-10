@@ -16,7 +16,7 @@ header {
 
 .logo {
     margin-right: 10px;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%;
 }
 
 h1 {
@@ -62,6 +62,35 @@ nav ul li a:hover {
     display: block;
 }
 
+.welcome-title {
+    text-align: center;
+    color: white;
+}
+
+#welcome {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.welcome-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s, border-color 0.5s;
+}
+
+.welcome-button:hover {
+    background: white;
+    color: black;
+    border-color: #bababa;
+}
+
 .service-cards {
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +105,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 15px; /* Increased border radius */
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
@@ -103,7 +132,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 15px; /* Increased border radius */
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
