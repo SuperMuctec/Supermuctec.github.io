@@ -23,7 +23,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: 765; /* Align buttons to the right */
+    margin-left: 765px; /* Align buttons to the right */
 }
 
 nav ul li {
