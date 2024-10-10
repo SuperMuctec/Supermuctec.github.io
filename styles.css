@@ -11,32 +11,31 @@ header {
     color: #fff;
     padding: 15px;
     display: flex;
-    justify-content: space-between; /* Change to space-between */
+    justify-content: flex-start;
     align-items: center;
     position: relative;
 }
 
 .logo {
-    margin-right: 10px; 
-    border-radius: 50%; /* Make image circular */
-    width: 50px; /* Set width for the image */
-    height: 50px; /* Set height for the image */
+    margin-right: 10px;
+    border-radius: 50%; /* Make the logo circular */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
+    margin-left: auto; /* Align buttons to the right */
 }
 
 nav ul li {
-    margin: 0 10px; 
+    margin: 0 10px;
     position: relative; /* For dropdown positioning */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 8px 12px; 
+    padding: 8px 12px;
     border: 2px solid #fff;
     border-radius: 10px;
     transition: background 0.8s, transform 0.8s;
@@ -48,19 +47,17 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Dropdown styles */
-nav ul li .dropdown {
-    display: none; 
-    position: absolute; 
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 10px;
-    border-radius: 5px; 
-    z-index: 10; 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-nav ul li:hover .dropdown {
-    display: block; 
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .hero {
@@ -76,61 +73,73 @@ nav ul li:hover .dropdown {
 
 .cta-button {
     display: inline-block;
-    padding: 8px 16px; 
+    padding: 8px 16px;
     border-radius: 10px;
-    border: 2px solid #fff; 
-    background: transparent; 
-    color: #fff; 
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
     transition: background 0.8s, transform 0.8s;
-    margin-top: 50px; 
-    text-decoration: none; 
+    margin-top: 50px;
+    text-decoration: none;
 }
 
 .cta-button:hover {
-    background: #fff; 
+    background: #fff;
     color: #000;
-    border: 2px solid #bababa; 
-    transform: scale(1.1); 
+    border: 2px solid #bababa;
+    transform: scale(1.1);
 }
 
-.services {
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.about-content {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    border: 2px solid #bababa;
+    background: rgba(255, 255, 255, 0.1); /* Initial transparent background */
+    color: white; /* Initial text color */
+}
+
+.about-content:hover {
+    background: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color to black on hover */
+    border: 2px solid black; /* Change border to black on hover */
+}
+
+.service-enclosure {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.services .service-card {
-    background: rgba(255, 255, 255, 0.3); 
-    color: white; 
+.service-card {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
     padding: 15px;
-    margin: 0 10px; 
-    border: 2px solid #bababa; 
-    border-radius: 10px; 
+    margin: 0 9.66px;
+    border-radius: 10px;
     flex: 1;
-    transition: background 0.3s, color 0.3s, border 0.3s; 
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    border: 2px solid #bababa; /* Initial border */
 }
 
-.services .service-card:hover {
-    background: white; 
-    color: black; 
-    border: 2px solid black; 
-}
-
-.about-content {
-    background: rgba(255, 255, 255, 0.3); 
-    color: white; 
-    border-radius: 10px; 
-    padding: 15px; 
-    transition: background 0.3s, color 0.3s, border 0.3s; 
-    border: 2px solid #bababa; 
-}
-
-.about-content:hover {
-    background: white; 
-    color: black; 
-    border: 2px solid black; 
+.service-card:hover {
+    background: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color to black on hover */
+    border: 2px solid black; /* Change border to black on hover */
 }
 
 footer {
@@ -159,7 +168,7 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
 .close {
