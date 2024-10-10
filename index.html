@@ -8,36 +8,44 @@
 </head>
 <body>
     <header>
-        <img src="download.jpeg" alt="Logo" class="logo" />
-        <h1>Supermutec</h1>
+        <div class="logo">
+            <img src="download.jpeg" alt="Logo" class="logo-image">
+            <h1>Supermutec</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#contact" class="contact-button">Contact</a>
+                    <div class="dropdown-content">
+                        <p>Email: Supermutec</p>
+                        <p>Discord: supermutec</p>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
+    <section class="hero">
         <h2>Welcome to Supermutec</h2>
         <a href="#contact" class="cta-button">Get In Touch</a>
-    </div>
+    </section>
 
-    <section id="services">
+    <section id="services" class="services">
         <h2>Our Services</h2>
-        <div class="services">
+        <div class="service-enclosure">
             <div class="service-card">
                 <h3>Anime Runner</h3>
                 <p>Multi Purpose Discord Bot with Free and Paid Plans</p>
             </div>
             <div class="service-card">
-                <h3>Tying Animation Generator</h3>
+                <h3>Typing Animation Generator</h3>
                 <p>Generates an Animation Depicting a Person typing</p>
             </div>
             <div class="service-card">
                 <h3>Making Discord Bots</h3>
-                <p>at $5 to $50 Price (Even For Free at Times)</p>
+                <p>At $5 to $50 Price (Even For Free at Times)</p>
             </div>
             <div class="service-card">
                 <h3>Join Discord Server For More</h3>
@@ -46,10 +54,10 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
         <h2>About Us</h2>
-        <div class="about-container">
-            <p>We are a team dedicated to providing high-quality services in the world of Discord bots and animations. Our mission is to create engaging experiences for our users.</p>
+        <div class="about-content">
+            <p>This is the about section where you can provide information about your project or company.</p>
         </div>
     </section>
 
