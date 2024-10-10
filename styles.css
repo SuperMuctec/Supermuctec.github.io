@@ -23,7 +23,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: -5px; /* Move all buttons to the left */
+    margin-left: -25px; /* Move all buttons to the left */
 }
 
 nav ul li {
