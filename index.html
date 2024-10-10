@@ -3,64 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Supermutec</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="download.jpeg" alt="Logo"> <!-- Add your logo image file here -->
-            <h1>Supermutec</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h2>Welcome to Supermutec</h2>
-        <a href="https://discord.gg" target="_blank" class="cta-button">Get in Touch</a>
-    </section>
+<header>
+    <img src="download.jpeg" alt="Logo" class="logo" width="50" height="50">
+    <h1 style="font-size: 24px; margin: 0; font-weight: bold;">Supermutec</h1>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#" class="cta-button" id="contactBtn">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Supermutec is a tech solution provider...</p>
-    </section>
+<div class="hero">
+    <h1>Welcome to Supermutec</h1>
+    <a href="#" class="cta-button">Get In Touch</a>
+</div>
 
-    <section id="services" class="service-enclosure">
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-enclosure">
         <div class="service-card">
             <h3>Service 1</h3>
-            <p>Description of Service 1.</p>
+            <p>Description of Service 1</p>
         </div>
         <div class="service-card">
             <h3>Service 2</h3>
-            <p>Description of Service 2.</p>
+            <p>Description of Service 2</p>
         </div>
         <div class="service-card">
             <h3>Service 3</h3>
-            <p>Description of Service 3.</p>
-        </div>
-    </section>
-
-    <div id="popup" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Contact Us</h2>
-            <p>Email us at: info@supermutec.com</p>
-            <a href="https://discord.gg" target="_blank" class="cta-button">Join Our Discord</a>
+            <p>Description of Service 3</p>
         </div>
     </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Supermutec. All Rights Reserved.</p>
-        <p>Do not copy.</p>
-    </footer>
+<section id="about">
+    <div class="about-box">
+        <h2>About Us</h2>
+        <p>We are Supermutec, providing top-notch services to enhance your digital experiences.</p>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<footer>
+    <p>© 2024 Supermutec. All rights reserved.</p>
+    <p class="do-not-copy">Do not copy this site.</p>
+</footer>
+
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out!</p>
+        <a href="https://discord.gg" class="cta-button" id="discordBtn">Join Us on Discord</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
