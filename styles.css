@@ -64,7 +64,7 @@ nav ul li a:hover {
     background: #00FFFF; /* Transparent background */
     color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
-    margin-top: 20px; /* Move the button lower */
+    margin-top: 50px; /* Move the button lower */
 }
 
 .cta-button:hover {
