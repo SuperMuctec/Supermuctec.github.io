@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #00FFFF; /* Change to white on hover */
+    background: #fff; /* Change to white on hover */
     color: #000;
     border: 2px solid #bababa/* Change text color to black on hover */
     transform: scale(1.1); /* Slightly expand on hover */
