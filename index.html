@@ -10,45 +10,49 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="circular-pic.jpg" alt="Supermutec Logo" class="logo">
-            <h1 class="logo-text">Supermutec</h1>
+            <img src="logo.png" alt="Supermutec Logo" class="logo">
+            <span class="logo-text">Supermutec</span>
         </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li class="contact">
-                    <a href="#contact" class="contact-button">Contact</a>
+                <li class="contact"><a href="#" id="contact-button">Contact</a>
                     <div class="contact-dropdown">
                         <p>Discord: supermutec</p>
                         <p>Email: supermutec@gmail.com</p>
-                        <a href="https://discord.com" target="_blank" class="cta-button">Join My Discord Server</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-    
     <section class="hero">
-        <h2>Welcome to Supermutec</h2>
+        <h1>Welcome to Supermutec</h1>
         <p>Your ultimate tech solution provider.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+        <a href="#contact" class="cta-button" id="get-in-touch">Get in Touch</a>
     </section>
-
     <section id="about">
         <h2>About Us</h2>
         <p>We specialize in modern tech solutions that elevate your business.</p>
     </section>
-
     <section id="services">
         <h2>Our Services</h2>
         <div class="service-card">Service 1</div>
         <div class="service-card">Service 2</div>
         <div class="service-card">Service 3</div>
     </section>
-
     <footer>
         <p>&copy; 2024 Supermutec. All rights reserved.</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Email: supermutec@gmail.com</p>
+            <p>Discord: supermutec</p>
+        </div>
+    </div>
 </body>
 </html>
