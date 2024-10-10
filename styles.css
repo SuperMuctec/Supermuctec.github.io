@@ -17,9 +17,16 @@ header {
 }
 
 .logo {
-    margin-right: 10px; /* Space between image and text */
+    display: flex;
+    align-items: center; /* Align the text and icon vertically */
 }
 
+.logo img {
+    width: 40px; /* Adjust the size of the icon */
+    height: 40px;
+    border-radius: 50%; /* Circular image */
+    margin-right: 10px; /* Space between the icon and the text */
+}
 nav ul {
     list-style-type: none;
     display: flex;
