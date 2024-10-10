@@ -4,7 +4,6 @@ body {
     padding: 0;
     line-height: 1.6;
     background: linear-gradient(to bottom, #000, #555);
-    text-align: center; /* Center text */
 }
 
 header {
@@ -17,29 +16,26 @@ header {
     position: relative;
 }
 
-.logo {
-    margin-right: auto;
+/* Supermutec logo styling */
+.logo-text {
+    font-size: 28px; /* Adjusted font size */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
-.logo h1 {
-    font-weight: bold; /* Bold text */
-    font-size: 36px; /* Adjust size as needed */
-    display: inline-block; /* Aligns with the image */
-    margin-right: 15px; /* Spacing between text and image */
-}
-
-.logo-img {
-    width: 50px; /* Adjust the size of the image */
-    height: 50px;
+.logo-text img {
     border-radius: 50%; /* Circular image */
-    display: inline-block; /* Aligns with the text */
-    vertical-align: middle; /* Vertically centers the image */
+    width: 40px; /* Image width */
+    height: 40px; /* Image height */
+    margin-right: 10px; /* Spacing between image and text */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: 735px; /* Move all buttons to the left */
+    justify-content: space-around; /* Equal spacing between buttons */
+    margin-left: auto; /* Move buttons to the right */
 }
 
 nav ul li {
@@ -53,13 +49,13 @@ nav ul li a {
     border: 2px solid #fff;
     border-radius: 10px;
     transition: background 0.8s, transform 0.8s;
-    background: #fff; /* White background */
 }
 
+/* Hover effect for the buttons */
 nav ul li a:hover {
     background: #fff;
     color: #000;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly expand on hover */
 }
 
 .hero {
@@ -82,13 +78,14 @@ nav ul li a:hover {
     color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
     margin-top: 75px; /* Move the button lower */
+    text-decoration: none; /* No underline */
 }
 
 .cta-button:hover {
     background: #fff; /* Change to white on hover */
-    color: #000;
-    border: 2px solid #bababa; /* Change text color to black on hover */
-    transform: scale(1.1); /* Slightly expand on hover */
+    color: #000; /* Change text color to black on hover */
+    border: 2px solid #bababa; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly expand on hover */
 }
 
 .service-enclosure {
@@ -145,7 +142,7 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    border-radius: 10px; /* Rounded corners for modal */
+    border-radius: 15px; /* Rounded corners for modal */
 }
 
 .close {
@@ -162,15 +159,16 @@ footer {
     cursor: pointer;
 }
 
-#discordButton {
-    background-color: #2ecc71; /* Sea green color */
-    color: white;
-    padding: 10px 20px;
+.popup-button {
+    background-color: #2E8B57; /* Sea green color */
+    color: #fff; /* White text */
+    padding: 10px 15px;
     border: none;
     border-radius: 10px;
-    transition: transform 0.3s; /* Expand effect on hover */
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-#discordButton:hover {
+.popup-button:hover {
     transform: scale(1.05); /* Slightly expand on hover */
 }
