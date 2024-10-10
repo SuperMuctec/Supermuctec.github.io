@@ -11,12 +11,14 @@ header {
     color: #fff;
     padding: 15px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 .logo {
     margin-right: 10px;
-    border-radius: 50%; /* Make the logo circular */
+    border-radius: 15px; /* Added corner radius */
 }
 
 nav ul {
@@ -27,7 +29,7 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
-    position: relative; /* For dropdown positioning */
+    position: relative; /* For dropdown */
 }
 
 nav ul li a {
@@ -46,79 +48,45 @@ nav ul li a:hover {
 }
 
 .dropdown-content {
-    display: none;
+    display: none; /* Hide by default */
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0.9);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* Show on hover */
 }
 
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    transition: background 0.8s, transform 0.8s;
-    margin-top: 50px;
-    text-decoration: none;
-}
-
-.cta-button:hover {
-    background: #fff;
-    color: #000;
-    border: 2px solid #bababa;
-    transform: scale(1.1);
-}
-
-.about-section {
-    background: rgba(255, 255, 255, 0.1); /* Transparent background */
-    color: white; /* Initial text color */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+.about-section, .service-card {
+    color: white; /* Set text color to white */
+    text-align: center; /* Centered text */
 }
 
 .service-enclosure {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     padding: 20px;
+    border: 2px solid #bababa; /* Border color */
 }
 
 .service-card {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid #bababa; /* Initial border */
-    transition: background 0.3s, color 0.3s, border 0.3s;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    color: #fff; /* White text */
+    padding: 20px;
+    margin: 10px; /* Margin for spacing */
+    border-radius: 10px; /* Rounded corners */
+    transition: background 0.3s, color 0.3s, border 0.3s; /* Transition for hover effects */
+    border: 2px solid #bababa; /* Initial border color */
 }
 
 .service-card:hover {
     background: #fff; /* Change background to white on hover */
     color: #000; /* Change text color to black on hover */
-    border: 2px solid black; /* Change border to black on hover */
+    border: 2px solid #000; /* Change border to black on hover */
 }
 
 footer {
@@ -126,4 +94,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: auto;
 }
