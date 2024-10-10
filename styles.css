@@ -18,7 +18,9 @@ header {
 
 .logo {
     margin-right: 10px;
-    border-radius: 15px; /* Added corner radius */
+    border-radius: 50%; /* Makes the image circular */
+    width: 100px; /* Adjust size */
+    height: 100px; /* Adjust size */
 }
 
 nav ul {
@@ -53,15 +55,22 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.9);
     min-width: 160px;
     z-index: 1;
+    color: white; /* Text color for dropdown */
+    padding: 10px; /* Padding for dropdown items */
 }
 
 .dropdown:hover .dropdown-content {
     display: block; /* Show on hover */
 }
 
-.about-section, .service-card {
-    color: white; /* Set text color to white */
-    text-align: center; /* Centered text */
+.about-section {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    color: #000; /* Black text */
+    padding: 20px; /* Padding for spacing */
+    margin: 20px; /* Margin around the section */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #bababa; /* Border color */
+    text-align: center; /* Center text */
 }
 
 .service-enclosure {
@@ -70,7 +79,6 @@ nav ul li a:hover {
     align-items: center;
     margin-top: 30px;
     padding: 20px;
-    border: 2px solid #bababa; /* Border color */
 }
 
 .service-card {
