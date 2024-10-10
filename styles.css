@@ -45,16 +45,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
 
 .cta-button {
     display: inline-block;
@@ -137,13 +127,6 @@ nav ul li a:hover {
     line-height: 1.5;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-}
 
 .modal {
     display: none;
