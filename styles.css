@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
 }
 
 .logo-container {
@@ -49,19 +49,18 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: background 0.3s, transform 0.4s, font-size 0.4s;
+    transition: background 0.3s, transform 0.3s;
     padding: 10px 15px;
     border-radius: 10px;
     display: inline-block;
-    font-size: 16px;
-    min-width: 100px; /* Set a minimum width */
+    font-size: 16px; /* Set initial font size */
 }
 
 nav ul li a:hover {
     background: #fff;
     color: #000;
-    transform: scale(1.1); /* Slightly expanded on hover */
-    font-size: 18px; /* Slightly increased font size */
+    transform: scale(1.2); /* Expand button more on hover */
+    font-size: 18px; /* Expand font size on hover */
 }
 
 .contact-dropdown {
@@ -94,13 +93,12 @@ nav ul li a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.4s, font-size 0.4s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
     background: #0097a7;
-    transform: scale(1.1); /* Slightly expanded on hover */
-    font-size: 18px; /* Slightly increased font size */
+    transform: scale(1.2);
 }
 
 section {
