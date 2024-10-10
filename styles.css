@@ -9,53 +9,40 @@ body {
 header {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
 }
 
-/* Supermutec logo styling */
-.logo-text {
-    font-size: 28px; /* Adjusted font size */
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.logo-text img {
-    border-radius: 50%; /* Circular image */
-    width: 40px; /* Image width */
-    height: 40px; /* Image height */
-    margin-right: 10px; /* Spacing between image and text */
+.logo {
+    margin-right: 10px; /* Space between image and text */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around; /* Equal spacing between buttons */
-    margin-left: auto; /* Move buttons to the right */
+    margin-left: 10px; /* Reduced margin to fit better */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px; /* Reduced margin between buttons */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 8px 12px; /* Reduced padding */
     border: 2px solid #fff;
     border-radius: 10px;
     transition: background 0.8s, transform 0.8s;
 }
 
-/* Hover effect for the buttons */
 nav ul li a:hover {
     background: #fff;
     color: #000;
-    transform: scale(1.05); /* Slightly expand on hover */
+    transform: scale(1.05);
 }
 
 .hero {
@@ -71,21 +58,21 @@ nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced padding */
     border-radius: 10px;
     border: 2px solid #fff; /* White border */
     background: transparent; /* Transparent background */
     color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
-    margin-top: 75px; /* Move the button lower */
-    text-decoration: none; /* No underline */
+    margin-top: 50px; /* Moved the button lower */
+    text-decoration: none; /* Remove underline */
 }
 
 .cta-button:hover {
     background: #fff; /* Change to white on hover */
-    color: #000; /* Change text color to black on hover */
-    border: 2px solid #bababa; /* Change border color on hover */
-    transform: scale(1.05); /* Slightly expand on hover */
+    color: #000;
+    border: 2px solid #bababa; /* Change text color to black on hover */
+    transform: scale(1.1); /* Slightly expand on hover */
 }
 
 .service-enclosure {
@@ -102,8 +89,8 @@ nav ul li a:hover {
 .service-card {
     background: rgba(0, 0, 0, 0.8); /* Dark background */
     color: #fff; /* White text */
-    padding: 20px;
-    margin: 0 9.6605px; /* Half of 19.321px for equal spacing on both sides */
+    padding: 15px; /* Reduced padding */
+    margin: 0 9.66px; /* Half of 19.321px for equal spacing on both sides */
     border-radius: 10px; /* Rounded corners for individual service cards */
     flex: 1; /* Make cards flexible to take equal space */
     transition: background 0.3s, color 0.3s, border 0.3s; /* Transition for hover effects */
@@ -142,7 +129,7 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    border-radius: 15px; /* Rounded corners for modal */
+    border-radius: 15px; /* Added border radius */
 }
 
 .close {
@@ -157,18 +144,4 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-.popup-button {
-    background-color: #2E8B57; /* Sea green color */
-    color: #fff; /* White text */
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.popup-button:hover {
-    transform: scale(1.05); /* Slightly expand on hover */
 }
