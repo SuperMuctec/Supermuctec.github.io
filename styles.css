@@ -4,10 +4,14 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: url('aesthetic-anime-character-gaming.jpg') no-repeat center center/cover; /* Add your background image */
+    background: url('img.jpg') no-repeat center center/cover; /* Add your background image */
     color: #fff;
 }
 
