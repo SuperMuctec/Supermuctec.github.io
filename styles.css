@@ -17,20 +17,13 @@ header {
 }
 
 .logo {
-    display: flex;
-    align-items: center; /* Align the text and icon vertically */
+    margin-right: 10px; /* Space between image and text */
 }
 
-.logo img {
-    width: 40px; /* Adjust the size of the icon */
-    height: 40px;
-    border-radius: 50%; /* Circular image */
-    margin-right: 10px; /* Space between the icon and the text */
-}
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: 700px; /* Align buttons to the right */
+    margin-left: -765px; /* Align buttons to the right */
 }
 
 nav ul li {
@@ -108,6 +101,40 @@ nav ul li a:hover {
     background: #fff; /* Change background to white on hover */
     color: #000; /* Change text color to black on hover */
     border: 2px solid #bababa; /* Change border to #bababa on hover */
+}
+
+#about {
+    display: flex;
+    justify-content: center; /* Centers the section horizontally */
+    align-items: center;
+    height: 50vh; /* Optional: adjusts height of the section */
+}
+
+.about-box {
+    background-color: rgba(255, 255, 255, 0.9); /* White background */
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid transparent; /* Start with a transparent border */
+    text-align: center; /* Center the text */
+    width: 60%; /* Width of the box */
+    color: black; /* Text color */
+    transition: background 0.3s, color 0.3s, border 0.3s; /* Smooth transition */
+}
+
+.about-box:hover {
+    background-color: #fff; /* Background on hover */
+    color: #000; /* Change text color to black */
+    border: 2px solid #bababa; /* Change border color */
+}
+
+.about-box h2 {
+    font-size: 28px; /* Adjust title size */
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 16px; /* Adjust paragraph size */
+    line-height: 1.5;
 }
 
 footer {
