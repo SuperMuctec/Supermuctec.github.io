@@ -76,10 +76,34 @@ nav ul li a:hover {
     transform: scale(1.1); /* Slightly expand on hover */
 }
 
-section {
-    padding: 50px;
-    text-align: center;
+.service-enclosure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(0, 0, 0, 0.5); /* Optional: background for enclosure */
 }
+
+.service-card {
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    margin: 0 9.6605px; /* Half of 19.321px for equal spacing on both sides */
+    border-radius: 10px; /* Rounded corners for individual service cards */
+    flex: 1; /* Make cards flexible to take equal space */
+    transition: background 0.3s, color 0.3s, border 0.3s; /* Transition for hover effects */
+    border: 2px solid transparent; /* Transparent border to start with */
+}
+
+.service-card:hover {
+    background: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color to black on hover */
+    border: 2px solid #bababa; /* Change border to #bababa on hover */
+}
+
 
 footer {
     background: #333;
