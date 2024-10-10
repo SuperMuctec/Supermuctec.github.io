@@ -11,32 +11,23 @@ header {
     color: #fff;
     padding: 15px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    position: relative;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
-    border-radius: 50%; /* Circular image */
-    margin-right: 10px; /* Space between image and text */
+    margin-right: 10px;
+    border-radius: 50%; /* Make the logo circular */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: auto; /* Align buttons to the left */
+    margin-left: auto; /* Align buttons to the right */
 }
 
 nav ul li {
-    position: relative; /* Position relative to enable absolute positioning for the dropdown */
     margin: 0 10px;
+    position: relative; /* For dropdown positioning */
 }
 
 nav ul li a {
@@ -55,19 +46,16 @@ nav ul li a:hover {
 }
 
 .dropdown-content {
-    display: none; /* Initially hide the dropdown */
-    position: absolute; /* Position it below the Contact button */
-    background: #fff; /* White background */
-    color: #000; /* Black text */
-    min-width: 160px; /* Minimum width of the dropdown */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    z-index: 1; /* Ensure dropdown appears above other content */
-    padding: 10px; /* Padding inside the dropdown */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-nav ul li:hover .dropdown-content {
-    display: block; /* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .hero {
@@ -83,30 +71,34 @@ nav ul li:hover .dropdown-content {
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 8px 16px;
     border-radius: 10px;
-    border: 2px solid #fff; /* White border */
-    background: transparent; /* Transparent background */
-    color: #fff; /* Text color */
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
     transition: background 0.8s, transform 0.8s;
     margin-top: 50px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .cta-button:hover {
-    background: #fff; /* Change to white on hover */
+    background: #fff;
     color: #000;
-    border: 2px solid #bababa; /* Change text color to black on hover */
-    transform: scale(1.1); /* Slightly expand on hover */
+    border: 2px solid #bababa;
+    transform: scale(1.1);
 }
 
-.services {
+.about-section {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: white; /* Initial text color */
     padding: 20px;
-    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .service-enclosure {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
@@ -114,31 +106,19 @@ nav ul li:hover .dropdown-content {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.9); /* White background */
-    color: #000; /* Black text */
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
     padding: 15px;
-    margin: 0 10px; /* Space between cards */
-    border-radius: 10px; /* Rounded corners */
-    flex: 1;
-    transition: background 0.3s, color 0.3s, border 0.3s; /* Transition for hover effects */
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #bababa; /* Initial border */
+    transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
 .service-card:hover {
     background: #fff; /* Change background to white on hover */
     color: #000; /* Change text color to black on hover */
-    border: 2px solid #bababa; /* Change border to #bababa on hover */
-}
-
-.about {
-    text-align: center;
-    padding: 20px;
-}
-
-.about-content {
-    background: rgba(255, 255, 255, 0.9); /* Background for about section */
-    color: #000; /* Black text */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px; /* Padding for about section */
+    border: 2px solid black; /* Change border to black on hover */
 }
 
 footer {
@@ -146,5 +126,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: auto;
 }
