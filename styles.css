@@ -38,32 +38,35 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: center; /* Center the nav items */
 }
 
 nav ul li {
-    margin: 0 1750px; /* Increased spacing */
+    margin: 0 30px; /* Space between navigation items */
     position: relative; /* For dropdown positioning */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
-    padding: 10px 15px; /* Add padding for clickable area */
+    transition: color 0.3s, background 0.3s, transform 0.3s; /* Add transition for background and transform */
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Background on hover */
-    border-radius: 10px; /* Rounded corners */
+    background: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color on hover */
+    border-radius: 10px;
+    transform: scale(1.1); /* Expand button on hover */
 }
 
 .contact-dropdown {
     display: none; /* Hide dropdown by default */
     position: absolute; /* Position it relative to the parent */
-    background: rgba(0, 0, 0, 0.9); /* Background for dropdown */
-    border-radius: 10px; /* Rounded corners */
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
     padding: 10px;
-    margin-top: 10px; /* Space from the button */
+    margin-top: 10px;
     z-index: 1; /* Ensure dropdown is on top */
 }
 
@@ -92,7 +95,7 @@ nav ul li a:hover {
 
 .cta-button:hover {
     background: #0097a7;
-    transform: scale(1.1); /* Slightly enlarge button on hover */
+    transform: scale(1.1);
 }
 
 section {
