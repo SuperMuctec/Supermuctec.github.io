@@ -102,8 +102,8 @@ nav ul li:hover .dropdown {
 }
 
 .services .service-card {
-    background: transparent; 
-    color: #fff; 
+    background: rgba(255, 255, 255, 0.3); 
+    color: white; 
     padding: 15px;
     margin: 0 10px; 
     border: 2px solid #bababa; 
@@ -113,7 +113,7 @@ nav ul li:hover .dropdown {
 }
 
 .services .service-card:hover {
-    background: rgba(255, 255, 255, 0.3); 
+    background: white; 
     color: black; 
     border: 2px solid black; 
 }
