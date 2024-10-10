@@ -86,14 +86,29 @@ nav ul li a:hover {
     border-color: #000;
 }
 
-.neon-text {
+.services-title {
     text-align: center;
-    font-size: 2em;
-    color: #39ff14; /* Neon green */
-    text-shadow: 
-        0 0 5px #39ff14,
-        0 0 10px #39ff14,
-        0 0 20px #39ff14,
-        0 0 30px #39ff14,
-        0 0 40px #39ff14;
+    color: white;
+}
+
+.about-title {
+    text-align: center;
+    color: white;
+}
+
+.about-box {
+    background-color: transparent;
+    border: 2px solid #bababa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+.about-box:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
 }
