@@ -62,13 +62,13 @@ nav ul li a:hover {
     border-radius: 10px;
     border: 2px solid #fff; /* White border */
     background: transparent; /* Transparent background */
-    color: #000; /* Text color */
+    color: #fff; /* Text color */
     transition: background 0.8s, transform 0.8s;
     margin-top: 20px; /* Move the button lower */
 }
 
 .cta-button:hover {
-    background: #fff; /* Change to white on hover */
+    background: #00FFFF; /* Change to white on hover */
     color: #000; /* Change text color to black on hover */
     transform: scale(1.05); /* Slightly expand on hover */
 }
