@@ -1,9 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const services = document.querySelectorAll('.service-card');
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-    services.forEach(service => {
-        service.addEventListener('click', function() {
-            alert(`You clicked on ${service.querySelector('h3').innerText}`);
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            const content = dropdown.querySelector('.dropdown-content');
+            content.style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseleave', () => {
+            const content = dropdown.querySelector('.dropdown-content');
+            content.style.display = 'none';
         });
     });
 });
