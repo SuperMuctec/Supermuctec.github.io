@@ -25,16 +25,3 @@ A responsive and modern personal website showcasing **Supermutec's** work as a *
 - **Custom Images and Icons**: Tailored visuals for a unique appearance.
 
 ---
-
-## **📂 Project Structure**
-
-```plaintext
-.
-├── index.html        # Main HTML structure
-├── style.css         # Additional custom styles (optional)
-├── assets/
-│   ├── back.jpg      # Background image for the profile card
-│   ├── Pfp.webp      # Profile picture
-│   ├── user.svg      # Icon for user stats
-│   ├── train.svg     # Icon for train stats
-│   └── star.svg      # Icon for star stats
