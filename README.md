@@ -9,9 +9,6 @@ A responsive and modern personal website showcasing **Supermutec's** work as a *
 - **🌈 Gradient Navigation Bar**  
   A stunning gradient bar with smooth hover transitions for easy navigation.
 
-- **📱 Fully Responsive Design**  
-  Optimized for all devices—desktop, tablet, and mobile.
-
 - **🎨 Interactive Profile Card**  
   Includes a customizable profile image, stats, and a call-to-action button.
 
@@ -20,11 +17,6 @@ A responsive and modern personal website showcasing **Supermutec's** work as a *
 
 ---
 
-## **📸 Preview**
-
-![Website Preview](back.jpg)
-
----
 
 ## **🛠️ Technologies Used**
 
