@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" id="Html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col items-start bg-gray-100 dark:bg-gray-900">
+    <nav class="flex justify-between w-full h-[74px] bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 p-4">
+        <span class="px-6 py-2 font-semibold text-xl text-white transition-transform transform hover:-translate-y-1">
+            Supermutec's Website
+        </span>
+        <ul class="flex space-x-6 items-center font-mono text-white">
+            <li class="border-2 border-slate-200 hover:border-slate-800 transition-transform transform hover:-translate-y-1 px-4 py-1 rounded-full hover:bg-orange-500">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="border-2 border-slate-200 hover:border-slate-800 transition-transform transform hover:-translate-y-1 px-4 py-1 rounded-full hover:bg-orange-500">
+                <a href="#">Projects</a>
+            </li>
+            <li class="border-2 border-slate-200 hover:border-slate-800 transition-transform transform hover:-translate-y-1 px-4 py-1 rounded-full hover:bg-orange-500">
+                <a href="https://github.com/SuperMuctec">Github</a>
+            </li>
+            <li class="border-2 border-slate-200 hover:border-slate-800 transition-transform transform hover:-translate-y-1 px-4 py-1 rounded-full hover:bg-orange-500">
+                <a href="https://discord.gg/fmHmS6bfAX">Join Us</a>
+            </li>
+            <button onclick="darkmode()" id="darkmode-btn" class="transform transition-transform hover:-translate-y-1">
+                <img class="w-8" src="../dark.svg" alt="Dark Mode">
+            </button>
+            <li></li>
+        </ul>
+    </nav>
+    <div 
+    class="w-[300px] mt-[120px] mx-[250px] bg-white transform-gpu transition-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-fuchsia-200 rounded-lg text-gray-900  dark:hover:shadow-green-900 dark:hover:shadow-2xl dark:bg-slate-600">
+    
+    <div class="w-32 h-32 relative mx-[200px] -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='python-logo.png'>
+    </div>
+    <div class="w-32 h-32 relative -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='Typer-Logo.png'>
+    </div>     
+    <div class="text-center mt-2">
+        <h2 class="font-semibold dark:text-gray-50 text-3xl">Typer</h2>
+        <p class="text-gray-500 dark:text-gray-200">Python</p>
+    </div>
+    <ul class="px-4 py-4 mt-2 text-gray-700 flex items-center justify-around font-semibold dark:text-white">
+        This program generates a typing animation based on Command Line Interface and can also type physically
+    </ul>
+    <div class="p-4 border-t mx-8 mt-2">
+        <button class="w-1/2 block mx-auto rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 hover:shadow-lg font-semibold text-white px-6 py-2 transform-gpu transition-transform hover:-translate-y-1"><a href="https://github.com/SuperMuctec/Typer">Github</a></button>
+    </div>
+
+    </div>
+    <div class="w-[300px] -mt-[350px] mx-[800px] bg-white transform-gpu transition-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-fuchsia-200 rounded-lg text-gray-900  dark:hover:shadow-green-900 dark:hover:shadow-2xl dark:bg-slate-600">
+    
+    <div class="w-32 h-32 relative mx-[200px] -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full " src='python-logo.png'>
+    </div>
+    <div class="w-32 h-32 relative -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='Discord.png'>
+    </div>     
+    <div class="text-center mt-2">
+        <h2 class="font-semibold dark:text-gray-50 text-3xl">Wireless Communication</h2>
+        <p class="text-gray-500 dark:text-gray-200">Python</p>
+    </div>
+    <ul class="px-4 py-4 mt-2 text-gray-700 flex items-center justify-around font-semibold dark:text-white">
+        This Program allows you to send messages between a server and client through discord.py because I will not host the sockets code by paying AWS
+    </ul>
+    <div class="p-4 border-t mx-8 mt-2">
+        <button class="w-1/2 block mx-auto rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 hover:shadow-lg font-semibold text-white px-6 py-2 transform-gpu transition-transform hover:-translate-y-1"><a href="https://github.com/SuperMuctec/Multi-Device-Communication">Github</a></button>
+    </div>
+    </div>
+
+    <div 
+    class="w-[300px] mt-[120px] mx-[250px] bg-white transform-gpu transition-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-fuchsia-200 rounded-lg text-gray-900  dark:hover:shadow-green-900 dark:hover:shadow-2xl dark:bg-slate-600">
+    
+    <div class="w-32 h-32 relative mx-[200px] -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='java.png'>
+    </div>
+    <div class="w-32 h-32 relative -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='Forecast.png'>
+    </div>     
+    <div class="text-center mt-2">
+        <h2 class="font-semibold dark:text-gray-50 text-3xl">Weather Forecast</h2>
+        <p class="text-gray-500 dark:text-gray-200">Java</p>
+    </div>
+    <ul class="px-4 py-4 mt-2 text-gray-700 flex items-center justify-around font-semibold dark:text-white">
+        Forecast Weather in java using JFrames and apis <b class="font-bold">Only Works online</b> and also has interactive icons
+    </ul>
+    <div class="p-4 border-t mx-8 mt-2">
+        <button class="w-1/2 block mx-auto rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 hover:shadow-lg font-semibold text-white px-6 py-2 transform-gpu transition-transform hover:-translate-y-1"><a href="https://github.com/SuperMuctec/Weather-Forecast">Github</a></button>
+    </div>
+
+    </div>
+    <div class="w-[300px] -mt-[350px] mx-[800px] bg-white transform-gpu transition-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-fuchsia-200 rounded-lg text-gray-900  dark:hover:shadow-green-900 dark:hover:shadow-2xl dark:bg-slate-600">
+    
+    <div class="w-32 h-32 relative mx-[200px] -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='python-logo.png'>
+    </div>
+    <div class="w-32 h-32 relative -mt-16 rounded-full overflow-hidden">
+        <img class="object-cover w-full h-full" src='shield-logo.png'>
+    </div>     
+    <div class="text-center mt-2">
+        <h2 class="font-semibold dark:text-gray-50 text-3xl">Hello World Bruteforce</h2>
+        <p class="text-gray-500 dark:text-gray-200">Python</p>
+    </div>
+    <ul class="px-4 py-4 mt-2 text-gray-700 flex items-center justify-around font-semibold dark:text-white">
+        Bruteforces "Hello World" by loops and string breakdown and is a good way to learn the basics of bruteforce and string split.
+    </ul>
+    <div class="p-4 border-t mx-8 mt-2">
+        <button class="w-1/2 block mx-auto rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 hover:shadow-lg font-semibold text-white px-6 py-2 transform-gpu transition-transform hover:-translate-y-1"><a href="https://github.com/SuperMuctec/Multi-Device-Communication">Github</a></button>
+    </div>
+    </div>
+</body>
+<script src="spaghetti.js"></script>
+</html>
