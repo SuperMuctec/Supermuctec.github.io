@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="Html">
+<html lang="en" id = "Html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +7,63 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class',
+            darkMode: 'selector',
             theme: {
                 extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        };
+                colors: {
+                    clifford: '#da373d',
+          }
+        }
+      }
+    }
     </script>
 </head>
 <body class="bg-white dark:bg-slate-800 transition-colors">
-    <nav class="flex flex-wrap items-center justify-between px-4 sm:px-6 lg:px-8 py-4 bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500">
-        <span class="font-semibold text-lg sm:text-xl text-white transform-gpu transition-transform hover:-translate-y-1">
-            Supermutec's Website
-        </span>
-        <ul class="flex space-x-4 sm:space-x-6 items-center">
-            <li><a href="#" class="text-[14px] sm:text-[17px] border-2 border-slate-200 hover:border-slate-800 text-white hover:bg-orange-500 px-3 py-1 sm:py-2 rounded-full transition-transform transform hover:-translate-y-1">Home</a></li>
-            <li><a href="Projects/index.html" class="text-[14px] sm:text-[17px] border-2 border-slate-200 hover:border-slate-800 text-white hover:bg-orange-500 px-3 py-1 sm:py-2 rounded-full transition-transform transform hover:-translate-y-1">Projects</a></li>
-            <li><a href="https://github.com/SuperMuctec" class="text-[14px] sm:text-[17px] border-2 border-slate-200 hover:border-slate-800 text-white hover:bg-orange-500 px-3 py-1 sm:py-2 rounded-full transition-transform transform hover:-translate-y-1">Github</a></li>
-            <li><a href="https://discord.gg/fmHmS6bfAX" class="text-[14px] sm:text-[17px] border-2 border-slate-200 hover:border-slate-800 text-white hover:bg-orange-500 px-3 py-1 sm:py-2 rounded-full transition-transform transform hover:-translate-y-1">Join Us</a></li>
-            <li><button onclick="darkmode()" id="darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1">
-                <img class="w-6 sm:w-8" src="dark.svg" alt="Dark Mode">
-            </button></li>
+    <nav class="flex justify-between bg-gradient-to-r from-indigo-500 from 10% via-sky-500 via-30% to-emerald-500">
+        <span class="px-20 py-4 font-semibold text-xl text-white transform-gpu transition-transform hover:-translate-y-1">Supermutec's Website</span>
+        <ul class="px-28 text-[17px] py-4 flex space-x-6 justify-end font-mono">
+            <a href="#"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Home</li></a>
+            <a href="Projects/index.html"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Projects</li></a>
+            <a href="https://github.com/SuperMuctec"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Github</li></a>
+            <a href="https://discord.gg/fmHmS6bfAX"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Join Us</li></a>
+            <button onclick="darkmode()" id = "darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1"><img class = "w-8" src="dark.svg"></button>
         </ul>
     </nav>
 
-    <div class="max-w-full md:max-w-lg lg:max-w-md mx-4 md:mx-auto mt-12 bg-white dark:bg-slate-600 rounded-lg shadow-lg transform-gpu transition-transform hover:-translate-y-1 hover:shadow-2xl">
-        <div class="rounded-t-lg overflow-hidden">
-            <img class="w-full object-cover h-48" src="/back.jpg" alt="Background">
-        </div>
-        <div class="w-28 h-28 md:w-32 md:h-32 mx-auto relative -mt-14 border-4 border-white dark:border-black rounded-full overflow-hidden">
-            <img class="object-cover h-full w-full dark:bg-black" src="/Pfp.webp" alt="Profile Picture">
-        </div>
-        <div class="text-center mt-4">
-            <h2 class="font-semibold text-lg sm:text-xl dark:text-gray-50">Supermutec</h2>
-            <p class="text-gray-500 dark:text-gray-200 text-sm">Discord Bot Developer</p>
-        </div>
-        <ul class="py-4 flex justify-around text-gray-700 dark:text-gray-200">
-            <li class="flex flex-col items-center">
-                <img src="user.svg" alt="User Icon" class="w-6 transform-gpu transition-transform hover:-translate-y-1">
-                <span class="font-semibold">0</span>
-            </li>
-            <li class="flex flex-col items-center">
-                <img src="train.svg" alt="Train Icon" class="w-6 transform-gpu transition-transform hover:-translate-y-1">
-                <span class="font-semibold">0</span>
-            </li>
-            <li class="flex flex-col items-center">
-                <img src="star.svg" alt="Star Icon" class="w-6 transform-gpu transition-transform hover:-translate-y-1">
-                <span class="font-semibold">0</span>
-            </li>
-        </ul>
-        <div class="p-4 border-t text-center">
-            <a href="Projects/index.html"><button class="w-full sm:w-1/2 mx-auto block rounded-full bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 hover:shadow-lg text-white px-6 py-2 font-semibold transform-gpu transition-transform hover:-translate-y-1">Projects</button></a>
-        </div>
+<div
+    class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white transform-gpu transition-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-fuchsia-200 rounded-lg text-gray-900  dark:hover:shadow-green-900 dark:hover:shadow-2xl dark:bg-slate-600">
+    <div class="rounded-t-lg h-32 overflow-hidden">
+        <img class="object-cover object-center h-60 w-96" src='/back.jpg' alt='Woman looking front'>
     </div>
+    <div class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white dark:border-black rounded-full overflow-hidden">
+        <img class="object-cover object-center h-[190px] dark:bg-black -my-9 mx-[1px]" src='/Pfp.webp' alt='Woman looking front'>
+    </div>
+    <div class="text-center mt-2">
+        <h2 class="font-semibold dark:text-gray-50">Supermutec</h2>
+        <p class="text-gray-500 dark:text-gray-200">Discord Bot Developer</p>
+    </div>
+    <ul class="py-4 mt-2 text-gray-700 flex items-center justify-around">
+        <li class="flex flex-col items-center justify-around">
+            <img id="user" src="user.svg" alt="Star Icon" class="w-4 text-blue-900 hover:shadow-lg transform-gpu transition-transform hover:-translate-y-1 hover:shadow-green-300">
 
-    <script src="spaghetti.js"></script>
+            <div class="dark:text-white font-semibold">0</div>
+        </li>
+        <li class="flex flex-col items-center justify-between">
+            <img id="train" src="train.svg" alt="Star Icon" class="w-4 text-blue-900 hover:shadow-lg transform-gpu transition-transform hover:-translate-y-1 hover:shadow-green-300">
+
+            <div class="dark:text-white font-semibold">0</div>
+        </li>
+        <li class="flex flex-col items-center justify-around">
+            <img id="star" src="star.svg" alt="Star Icon" class="w-4 text-blue-900 hover:shadow-lg transform-gpu transition-transform hover:-translate-y-1 hover:shadow-green-300">
+
+            <div class="dark:text-white font-semibold">0</div>
+        </li>
+    </ul>
+    <div class="p-4 border-t mx-8 mt-2">
+        <a href="Projects/index.html"><button class="w-1/2 block mx-auto rounded-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 hover:shadow-lg font-semibold text-white px-6 py-2 transform-gpu transition-transform hover:-translate-y-1">Projects</button></a>
+    </div>
+</div>
+
 </body>
+<script src="spaghetti.js"></script>
 </html>
