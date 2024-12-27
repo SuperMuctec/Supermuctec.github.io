@@ -9,9 +9,6 @@ A responsive and modern personal website showcasing **Supermutec's** work as a *
 - **🌈 Gradient Navigation Bar**  
   A stunning gradient bar with smooth hover transitions for easy navigation.
 
-- **🎨 Interactive Profile Card**  
-  Includes a customizable profile image, stats, and a call-to-action button.
-
 - **⚡ Smooth Animations**  
   Subtle hover effects and transitions for a modern look and feel.
 

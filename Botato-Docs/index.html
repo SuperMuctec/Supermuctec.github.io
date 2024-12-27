@@ -4,31 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'selector',
-            theme: {
-                extend: {
-                colors: {
-                    clifford: '#da373d',
-          }
-        }
-      }
-    }
-    </script>
-</head>
+    <script src="playcdn.js"></script>
+    </head>
 <body class="bg-white dark:bg-slate-800 transition-colors">
+    
     <nav class="flex justify-between bg-gradient-to-r from-indigo-500 from 10% via-sky-500 via-30% to-emerald-500">
-        <span class="px-20 py-4 font-semibold text-xl text-white transform-gpu transition-transform hover:-translate-y-1">Supermutec's Website</span>
+        <span class="px-20 py-4 font-semibold text-xl text-white transform-gpu transition-transform hover:-translate-y-1">Botato -The Only Discord Bot you'll ever need</span>
         <ul class="px-28 text-[17px] py-4 flex space-x-6 justify-end font-mono">
             <a href="#"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Home</li></a>
-            <a href="Projects/index.html"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Projects</li></a>
+            <a href="Projects/index.html"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Documents</li></a>
             <a href="https://github.com/SuperMuctec"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Github</li></a>
             <a href="https://discord.gg/fmHmS6bfAX"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Join Us</li></a>
-            <button onclick="darkmode()" id = "darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1"><img class = "w-8" src="dark.svg"></button>
+            <button onclick="darkmode()" id = "darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1"><img class = "w-8" src="../dark.svg"></button>
         </ul>
     </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('Hero.jpg');"></div>
+            
+            <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="w-full md:w-1/2 mb-12 md:mb-0 p-7 bg-opacity-15 backdrop:filter backdrop-blur-2xl rounded-3xl shadow-lg">
+                        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-typing animate-blink">
+                            Botato
+                        </h1>
+                        <p class="text-xl mb-8 font-mono">Improving Discord servers with just one go to solution --> Botato</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1072462964789096538&permissions=8&integration_type=0&scope=bot" class="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-900 hover:text-blue-100 transition duration-300 text-center">Invite</a>
+                            <a href="#" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center">Read The Docs</a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <div class="bg-white bg-opacity-15 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+                            <h2 class="text-2xl font-semibold mb-6">Why Botato?</h2>
+                            <ul class="space-y-4">
+                                <li class="flex items-center">
+                                    <span class="text-2xl">📖</span>
+                                    <span class="font-semibold">Good rules declaration and also !rules command</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-2xl">✅</span>
+                                    <span class="font-semibold">Bank-grade Security</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-2xl">🤖</span>
+                                    <span class="font-semibold">AI-Chatting Completely Free</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative Element -->
+            <div class="absolute bottom-0 left-0 right-0">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ... (rest of your main content) ... -->
+    </main>
+    
+    
 </body>
 <script src="spaghetti.js"></script>
 </html>
