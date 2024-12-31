@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation</title>
     <script src="playcdn.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'selector',
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+          }
+        }
+      }
+    }
+    </script>
     </head>
 <body class="bg-white transition-colors">
     
@@ -12,7 +24,7 @@
         <span class="px-20 py-4 font-semibold text-xl text-white transform-gpu transition-transform hover:-translate-y-1">Botato -The Only Discord Bot you'll ever need</span>
         <ul class="px-28 text-[17px] py-4 flex space-x-6 justify-end font-mono">
             <a href="#"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Home</li></a>
-            <a href="Projects/index.html"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Documents</li></a>
+            <a href="Bot-Documentation/index.html"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Documents</li></a>
             <a href="https://github.com/SuperMuctec"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Github</li></a>
             <a href="https://discord.gg/fmHmS6bfAX"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Join Us</li></a>
             <button onclick="darkmode()" id = "darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1"><img class = "w-8" src="../dark.svg"></button>
@@ -33,7 +45,7 @@
                         <p class="text-xl mb-8 font-mono">Improving Discord servers with just one go to solution --> Botato</p>
                         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                             <a href="https://discord.com/oauth2/authorize?client_id=1072462964789096538&permissions=8&integration_type=0&scope=bot" class="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-900 hover:text-blue-100 transition duration-300 text-center">Invite</a>
-                            <a href="#" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center">Read The Docs</a>
+                            <a href="Bot-Documentation/index.html" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center">Read The Docs</a>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 md:pl-12">
