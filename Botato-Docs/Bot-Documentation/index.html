@@ -5,40 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation</title>
     <script src="playcdn.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
     <script>
         tailwind.config = {
             darkMode: 'selector',
             theme: {
                 extend: {
                 colors: {
-                    clifford: '#da373d',
+                    cardblack: '#414559',
+                    lightcherry: '#ca9ee6' 
           }
         }
       }
     }
     </script>
     </head>
-<body class="bg-white transition-colors dark:bg-slate-700">
+<body class="bg-white transition-colors dark:bg-[#292c3c]">
     
-    <nav class="flex justify-between bg-gradient-to-r from-indigo-500 from 10% via-sky-500 via-30% to-emerald-500 px-0">
-        <span class="px-20 py-4 font-semibold text-xl text-white transform-gpu transition-transform hover:-translate-y-1">Botato -The Only Discord Bot you'll ever need</span>
-        <ul class="px-28 text-[17px] py-4 flex space-x-6 justify-end font-mono">
-            <a href="#"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Home</li></a>
-            <a href="#"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Documents</li></a>
-            <a href="https://github.com/SuperMuctec"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Github</li></a>
-            <a href="https://discord.gg/fmHmS6bfAX"><li class="border-2 border-slate-200 hover:border-2 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">Join Us</li></a>
-            <button onclick="darkmode()" id = "darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1"><img class = "w-8" src="../../../dark.svg"></button>
-        </ul>
-    </nav>
+        <nav class="flex items-center justify-between bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 px-6 py-4">
+    <!-- Brand or Menu Title -->
+    <span class="px-20 font-semibold text-xl text-white transform-gpu transition-transform hover:-translate-y-1">Botato🥔 Documentation</span>
+
+    <!-- Hamburger Menu Button -->
+    <button class="sm:hidden block text-white" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+
+    <!-- Menu Items -->
+    <ul id="menu" class="hidden sm:flex space-x-6 items-center font-mono">
+        <a href="../index.html">
+            <li class="border-2 border-slate-200 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">
+                Home
+            </li>
+        </a>
+        <a href="#">
+            <li class="border-2 border-slate-200 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">
+                Documentation
+            </li>
+        </a>
+        <a href="https://github.com/SuperMuctec">
+            <li class="border-2 border-slate-200 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">
+                Github
+            </li>
+        </a>
+        <a href="https://discord.gg/fmHmS6bfAX">
+            <li class="border-2 border-slate-200 hover:border-slate-800 transform-gpu transition-transform text-white hover:bg-orange-500 hover:-translate-y-1 px-4 rounded-full py-[5px]">
+                Join Us
+            </li>
+        </a>
+        <button onclick="darkmode()" id="darkmode-btn" class="transform-gpu transition-transform hover:-translate-y-1">
+            <img class="w-8" src="../../../dark.svg">
+        </button>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+    }
+</script>
     
 
     <div class=" flex flex-wrap p-8">
     
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
                 <a href="Hello/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!hello</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!hello</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">A simple command to ping yourself and get said hi to (Used for checking if bot is on or not)</p>
@@ -50,10 +87,10 @@
     
     
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-[#414559] dark:text-white mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
                 <a href="Translator/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!translate</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-[#ca9ee6] shadow-md border-[#ca9ee6] rounded-lg py-5 px-[100px]">!translate</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Translate any text to any language click this card for help on usage</p>
@@ -65,10 +102,10 @@
     
     
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-[#414559] dark:text-white mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
                 <a href="Trivia/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!trivia</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!trivia</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Starts a trivia for you and your friends to enjoy :)</p>
@@ -80,10 +117,10 @@
     
         
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
                 <a href="Remind/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[69px]">!remindme</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[69px]">!remindme</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Works like an alarm, it pings you when the time you give (in seconds) runs out and for a specific task click the card for usage</p>
@@ -94,10 +131,10 @@
     
     
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
                 <a href="UserInfo/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!userinfo</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[100px]">!userinfo</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Use !userinfo and ping someone for getting their information like name, date joined and roles</p>
@@ -108,10 +145,10 @@
     
     
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
                 <a href="Joke/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!joke</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!joke</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Eh.. Feeling funny? Crack a joke</p>
@@ -121,69 +158,229 @@
         </div>
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="Help/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!help</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!help</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Sends the link to this website</p>
                 </div>
+                </a>
             </div>
         </div>
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="ChatGPT/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!chatgpt</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!chatgpt</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Want to use chatgpt without doing the boring typing in url just use this command</p>
                 </div>
+                </a>
             </div>
         </div>
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="Roll/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!roll</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!roll</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Rolls a dice for you</p>
                 </div>
+                </a>
             </div>
         </div>
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="Ruler/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[120px]">!rules</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[120px]">!rules</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Want to know the rules? Why switch channels when you can use just one command</p>
                 </div>
+                </a>
             </div>
         </div>
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="Pronic/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[69px]">!numbers Pronic</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[69px] whitespace-nowrap">!numbers Pronic</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Working on a maths project and need to know which number is a product of 2 consecutive numbers? Just use discord like a 👑</p>
                 </div>
+                </a>
             </div>
         </div>
 
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="dark:hover:shadow-teal-500 dark:text-white dark:shadow-yellow-300 mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+            <div class="dark:bg-cardblack dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="Update-Stats/index.html">
                 <div class="mx-auto mb-7 items-center flex">
-                    <div class="text-2xl font-extrabold border-2 shadow-fuchsia-500 shadow-md border-fuchsia-500 rounded-lg py-5 px-[69px]">!update_stats</div>
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[69px]">!update_stats</div>
                 </div>
                 <div>
                     <p class="text-base font-medium text-body-color">Want to update the server statistics channel? No need to retype just use one command</p>
                 </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <span class="font-bold dark:text-white text-black text-4xl transform-gpu transition-transform shadow-sm px-4 py-10">Adiministrator Commands:-</span>
+    
+    <div class=" flex flex-wrap p-8">
+    
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="rules-declare/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[80px]">!rulesdeclare</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to define the rules message for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="rules-delete/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[80px]">!rulesdelete</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to remove the rules message for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="defaultrole-declare/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[50px] whitespace-nowrap">!defaultrole-declare</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to define the rules message for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="defaultrole-delete/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[80px] whitespace-nowrap">!roledelete</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">Removes a default role given to every new user in the server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="welcome-declare/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[60px] whitespace-nowrap">!welcome-declare</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to define the welcome message channel for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="welcome-delete/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[60px] whitespace-nowrap">!welcome-delete</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to delete the welcome message channel for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="goodbye-declare/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[65px] whitespace-nowrap">!goodbye-declare</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to define the goodbye message channel for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="goodbye-delete/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[60px] whitespace-nowrap">!goodbye-delete</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to delete goodbye message channel for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="announce-declare/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[60px] whitespace-nowrap">!announce-declare</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to initalize an Announcement channel for the bot</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="announce-delete/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[60px] whitespace-nowrap">!announce-delete</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to delete Announcement message channel for your server</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="dark:bg-[#414559] dark:text-white  mb-9 rounded-xl py-8 px-7 shadow-md hover:shadow-lg sm:p-9 lg:px-6 xl:px-9 transform-gpu transition-transform hover:-translate-y-1">
+                <a href="Announcement/index.html">
+                <div class="mx-auto mb-7 items-center flex">
+                    <div class="text-2xl font-extrabold border-2 shadow-lightcherry shadow-md border-lightcherry rounded-lg py-5 px-[60px] whitespace-nowrap">!announcement</div>
+                </div>
+                <div>
+                    <p class="text-base font-medium text-body-color">A simple command to do an announcement</p>
+                </div>
+                </a>
             </div>
         </div>
     </div>
